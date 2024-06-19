@@ -1,0 +1,12 @@
+javascript
+//var,constantand let--->print variables
+/*r a=10
+var b=20
+//vaR store a variable to value var---> global scope 
+console.log(a+b)*/
+/*  {
+    let a=10
+    console.log(a
+}i// let --->private  scope it can only print the result
+{let a=10}
+console.log(a) this can show a syntax errror
