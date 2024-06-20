@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            width:100%;
+            height:100vh;
+            
+            box-sizing:border-box;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+.box{
+width:200px;
+height:200px;
+background-color:blue;
+transition:1s;
+
+}
+.box:hover{
+transition:1s;
+transform:skewX(199deg);/*rotate,scale*/
+}
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

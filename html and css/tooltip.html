@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 2px dotted goldenrod;
+        }
+        .tooltiptext {
+            visibility: hidden;
+            
+            background-color: aqua;
+            color: brown;
+            text-align: center;
+            border-radius: 6px;
+            padding: 7px 0;
+            position: absolute;
+            z-index: 1;
+            width: 100px;
+            height:30px;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        img{
+
+    
+          /* border-radius: 10px;
+            /*border-radius: 55%;
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 6px;
+            height: auto;
+            max-width: 100%
+            display:block;
+            opacity:2;
+            filter: grayscale(200%);
+           -webkit-box-reflect: below;*
+           width: 200px;
+           object-fit:cover;
+           object-position: 6px 20%;
+           height:300px;*/
+           -webkit-mask-image:url(code.jpeg);
+           mask-image: url(code.jpeg);
+
+           
+
+        }
+        /*.blur {filter: blur(4px);}
+.brightness {filter: brightness(250%);}
+.contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(180deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate {filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px green);}*/
+
+        img:hover{
+            transform:scaleX(2);
+            box-shadow:0 0 4px  6px rgb(21, 11, 31);
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip">Hi everyone!!! Hover over me
+        <span class="tooltiptext">Welcome address</span>
+    </div><a href="paris.jpg" target="_blank"><img src="paris.jpg" alt="paris" width="300" height="300"></a>
+</body>
+</html>

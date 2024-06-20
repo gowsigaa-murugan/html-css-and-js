@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox wrap</title>
+        <style>
+            .box {
+    padding: 30px;
+    border: 6px solid blue;
+    margin: 12px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+            /* flex box*/
+           .container{
+            width: 600px;
+            height: 450px;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            align-items:flex-start; 
+            
+            
+            border:2px solid red;
+            background-color: aqua;
+            color: brown;
+            padding: 2px;
+
+           }
+         .box:nth-child(1)  {
+            align-self: stretch;
+         }
+         .box:nth-child(3)  {
+            align-self: center;
+         }
+         .box:nth-child(5)  {
+            align-self:baseline;
+         }
+        </style>
+    </head>
+    <body>
+        <h2>flex wrap</h2>
+        <section class="container">
+             <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </section>
+    </body>
+</html>

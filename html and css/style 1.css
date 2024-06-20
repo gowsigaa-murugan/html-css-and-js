@@ -1,0 +1,25 @@
+p{
+    color: violet;
+    background-color: bisque;
+    font-size: 15px;
+
+}
+div{
+    color:brown;
+    background-color: rgb(21, 215, 151);
+    height:100px;
+    font-size: 14px;
+}
+#11{
+    color: lightskyblue;
+    font-size: 13px;
+
+}
+.car{
+    color: aquamarine;
+    background-color: aliceblue;
+}
+.bike{
+    color:thistle;
+    background-color:azure;
+}

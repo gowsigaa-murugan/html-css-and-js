@@ -1,0 +1,50 @@
+.good{
+    background-color: rgb(182, 110, 15);
+
+}
+h2{
+    text-align: center;
+    color: blue;
+}
+.para{
+    font: size 250%;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.one text{
+    font-size: 17px;
+    text-align: center;
+    text-decoration: dashed;
+
+
+}
+.two text{
+    line-height: 45px;
+
+
+}
+li {
+    display:inline-block;
+    background-color: aquamarine;
+    color: brown;
+
+}
+li a{
+    text-decoration: underline;
+    padding: 13%;
+    height: fit-content;
+    width: fit-content;
+}
+footer{
+    background-color: goldenrod;
+    color:darkred;
+}
+h5{
+    background-color: bisque;
+    color: black;
+    text-align: center;
+}
+
+
+

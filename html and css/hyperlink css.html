@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hyper link and pseudo classes</title>
+        <style>
+a{
+    text-decoration: underline;
+}
+/* unvisited link */
+
+ a:link
+{
+color:aquamarine;
+}
+/* visited link */
+a:visited{
+    color:bisque;
+}
+/* mouse over link */
+a:hover{
+    color:yellow;
+}
+/* selected link */
+a:active{
+    color:blueviolet;
+}
+div:hover{
+    background-color: darkred;
+     font-size:  10em;;
+}
+.container div:last-child{
+    background:silver;
+}
+div:nth-child(odd){
+    background:rgb(101, 62, 27);
+}
+
+        </style>
+    </head>
+    <body>
+<ul>
+    <li><a href="https://wpml.org/documentation/support/creating-multilingual-wordpress-themes/home-page-link/" target="_blank">home pagr</a></li>
+    <li><a href="https://www.svclnk.com/" target="_blank">service</a></li>
+<li><a href="https://support.link.com/topics/about-link" target="_blank">link</a></li>
+</ul>
+<section class=" container">
+    <div class="box1 "> Example 1 </div>
+    <div class="box2 "> Example 2 </div>
+    <div class="box3"> Example 3 </div>
+</section>
+<div class="box4 "> Example 4 </div>
+<div class="box5 "> Example 5 </div>
+<div class="box6 "> Example 6 </div>
+</body>
+</html>

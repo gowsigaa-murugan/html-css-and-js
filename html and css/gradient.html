@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            margin: 2px;
+            background:repeating-linear-gradient( to right , green 30%, green, blue, red);
+        }
+        .car {
+
+            height: 200px;
+            width: 200px;
+            margin: 3px;
+            background: repeating-radial-gradient( at top left, pink , purple 30%,purple);
+        }
+        h1{
+            text-shadow: 3px 3px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h4{
+            width:300px;
+            height: 130px;
+            padding: 25px;
+            background:aquamarine;
+            box-shadow:10px 10px 7px black;
+            color:blue;
+            text-shadow: 0px 0px 2px;
+        }
+        .bike{
+            /*transform:rotate(30deg);*/
+            /*bike: scale(1,2);*/
+            /*transform:skewX(30deg);*/
+            /*transform:matrix(1,-0.3,0,1,2,4) ;*/
+            transform:matrix3d(1,-0.3,0,1,2,4) ;
+            width: 300px;
+            height: 200px;
+            padding:9px;
+            margin:3px solid yellow;
+            background-color: blueviolet;
+            box-shadow: 0px 0px 15px black;
+        }
+        .shoe{
+            width: 100px;
+            height:100px;
+            background:burlywood;
+            transition-delay: 1s;
+        }
+        .shoe:hover{
+            width: 300px;
+            height: 400px;
+            transition:width 2s,height 1s;
+            
+            background-color: rgb(167, 108, 20);
+        }
+        /*animation*/
+        .rope{
+            width: 100px;
+            height: 200px;
+            background-color: tomato;
+            position:relative;
+            animation-name:cow;
+            animation-duration: 5s;
+            animation-delay:3s;
+        }
+        @keyframes cow{
+            from{background-color: yellow;}
+            50%{background-color: rgb(194, 21, 49);left: 200px;top: 200px;}
+            to{background-image:url(1.jpeg);}
+        }
+        .tooltip.tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            
+            background-color: aqua;
+            color: brown;
+            text-align: center;
+            border-radius: 6px;
+            padding: 7px 0;
+            position: absolute;
+            z-index: 1;
+        
+        }
+        .tooltip:hover.tooltiptext{
+            visibility: visible;
+        }
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 2px dotted goldenrod;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>text shadow effect</h1>
+    <h4>text shadow effect</h4>
+    <div class="box"></div>
+    <div class="car"></div>
+    <div class="bike"><b>trans</b></div>
+    <div class="shoe"></div>
+    <div class="rope"></div>
+    <div class="tooltip"> hi every one!!!</div>
+    <div class="tooltiptext">welcome address</div>
+
+    
+
+</body>
+</html>
